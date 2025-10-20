@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroConnect - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="home-container">
+    <header>
+      <h2>Hello, Sarah 👋</h2>
+      <p>Welcome back! How are you feeling today?</p>
+    </header>
+
+    <main>
+      <button class="btn-session">Start a Session</button>
+
+      <div class="companion-box">
+        <h4>Mental Health Companion</h4>
+        <button class="btn-secondary" onclick="goToJournal()">How are you feeling?</button>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function goToJournal() {
+      window.location.href = "journal.html";
+    }
+  </script>
+</body>
+</html>
