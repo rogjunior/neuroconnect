@@ -157,3 +157,64 @@ select {
   margin-top: 15px;
   font-weight: bold;
 }
+.dashboard-container {
+  background: #f1f8e9;
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.summary-box {
+  background: #c5e1a5;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+.summary-box ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+}
+
+.patients-list {
+  margin-top: 20px;
+}
+
+.patient-card {
+  background: #ffffff;
+  border: 1px solid #aed581;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.patient-card h4 {
+  margin: 0 0 5px;
+  color: #33691e;
+}
+
+.patient-card p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #4e944f;
+}
+
+.patient-card button {
+  margin-top: 8px;
+  background: #7cb342;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.patient-card button:hover {
+  background: #558b2f;
+}
+
