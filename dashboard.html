@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroConnect - Therapist Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h2>Welcome, Dr. Ana 👩‍⚕️</h2>
+      <p>Your patients and insights at a glance</p>
+    </header>
+
+    <section class="summary-box">
+      <h3>Today’s Overview</h3>
+      <ul>
+        <li>👥 Patients scheduled: <strong>4</strong></li>
+        <li>📈 High relapse risk: <strong>2</strong></li>
+        <li>💬 Unread journal entries: <strong>5</strong></li>
+      </ul>
+    </section>
+
+    <section class="patients-list">
+      <h3>Patients</h3>
+      <div class="patient-card">
+        <h4>Sarah Lima</h4>
+        <p>Mood: 😰 Anxious</p>
+        <p>Last entry: 2h ago</p>
+        <button onclick="viewDetails('Sarah Lima')">View Details</button>
+      </div>
+      <div class="patient-card">
+        <h4>João Pedro</h4>
+        <p>Mood: 😊 Happy</p>
+        <p>Last entry: Yesterday</p>
+        <button onclick="viewDetails('João Pedro')">View Details</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function viewDetails(name) {
+      alert("Loading full record for " + name);
+      // Aqui futuramente pode abrir prontuário completo
+    }
+  </script>
+</body>
+</html>
