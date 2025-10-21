@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroConnect - Emotional Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="journal-container">
+    <h2>How are you feeling?</h2>
+    <p>Write a few words about your emotions today.</p>
+
+    <textarea id="emotionText" placeholder="Type here..."></textarea>
+
+    <div class="emotion-select">
+      <label>Select a mood:</label>
+      <select id="mood">
+        <option value="">-- Choose --</option>
+        <option value="Happy 😊">Happy 😊</option>
+        <option value="Sad 😢">Sad 😢</option>
+        <option value="Anxious 😰">Anxious 😰</option>
+        <option value="Calm 😌">Calm 😌</option>
+        <option value="Angry 😡">Angry 😡</option>
+        <option value="Grateful 🙏">Grateful 🙏</option>
+      </select>
+    </div>
+
+    <button class="btn-session" onclick="saveJournal()">Save Entry</button>
+
+    <p id="feedback" class="feedback-text"></p>
+  </div>
+
+  <script>
+    function saveJournal() {
+      const text = document.getElementById("emotionText").value;
+      const mood = document.getElementById("mood").value;
+      const feedback = document.getElementById("feedback");
+
+      if (text.trim() === "" || mood === "") {
+        feedback.textContent = "Please write something and choose a mood.";
+        feedback.style.color = "#c62828";
+        return;
+      }
+
+      // Simulação de salvamento
+      feedback.textContent = "Entry saved successfully ✅";
+      feedback.style.color = "#2e7d32";
+
+      // Limpa os campos
+      document.getElementById("emotionText").value = "";
+      document.getElementById("mood").value = "";
+    }
+  </script>
+</body>
+</html>
