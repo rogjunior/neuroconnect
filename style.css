@@ -217,4 +217,28 @@ select {
 .patient-card button:hover {
   background: #558b2f;
 }
+.main-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #c8e6c9;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #a5d6a7;
+  z-index: 1000;
+}
+
+.main-nav a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
 
