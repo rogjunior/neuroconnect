@@ -240,5 +240,26 @@ select {
 .main-nav a:hover {
   text-decoration: underline;
 }
+@media (max-width: 600px) {
+  .login-container,
+  .home-container,
+  .journal-container,
+  .dashboard-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .btn-session,
+  .btn-secondary,
+  textarea,
+  select {
+    font-size: 14px;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+  }
+}
+
 
 
